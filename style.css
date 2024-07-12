@@ -1,0 +1,292 @@
+@font-face{
+  font-family: nb;
+  src: url(./NBInternationalProBoo.ttf);
+}
+
+
+@font-face{
+  font-family: rejoy;
+  src: url(./Rejouice-Headline.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:nb;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#page1 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(254, 251, 254, 0.667);
+  position: relative;
+}
+#cursor{
+  width: 7.5vw;
+  height: 7.5vw;
+ background-image: linear-gradient(-90deg,rgb(244, 67, 67),rgb(87, 87, 248));
+  border-radius: 50%;
+  position: fixed;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50% ,-50%);
+}
+#cursor h5{
+  font-size: 1.15vw;
+  font-weight: 500;
+}
+#page1 video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#page1-content {
+  width: 100%;
+  height: 100%;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: space-between;
+  position: relative;
+  z-index: 10;
+  color: #fff;
+
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  padding: 10px;
+  padding: 3vw 3vw;
+}
+nav h3{
+  font-size: 1.4vw;
+  font-weight: 100;
+}
+nav h4{
+  font-size: 1.4vw;
+  font-weight: 100;
+}
+#page1-content h1{
+  font-family: rejoy;
+  font-size: 27vw;
+  font-weight: 100;
+  line-height: 27vw;
+}
+#page2{
+  width: 100%;
+height: auto;
+  position: relative;
+  padding: 5vw 2.8vw;
+ 
+  
+}
+#page2-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.2vw;
+  margin-bottom: 1vw;
+  border-bottom: 1px solid black;
+
+}
+#page2-top h3{
+  font-size: 1.7vw;
+  font-weight: 500;
+  width: 26%;
+}
+.line2{
+  font-size: 3vw;
+  font-weight: 1200;
+  width: 100%;
+  text-align:center;
+
+
+
+ 
+}
+.line2:hover{
+  transform: scale(1.2);
+  transition: 1s;
+}
+#page3{
+  width: 100%;
+ height: 80vw;
+ position: relative;
+ padding: 3vw;
+}
+#page3-top{
+
+  text-align: center;
+  
+}
+#page3-top h4{
+  margin-bottom: 1vw;
+  font-size: 1vw;
+  font-weight: 500;
+
+}
+#page3-top h4 span{
+  font-size:0.7vw;
+  background-color: black;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 10px;
+}
+#page3-top h2{
+  font-size: 4vw;
+  font-weight: 500;
+}
+#page3-elements{
+  width: 100%;
+  height: 85vh;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8vw;
+}
+#page3-elements .box{
+  width: 32.5%;
+height: 100%;
+position: relative;
+
+}
+#page3-elements .box video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+
+}
+#page3-elements .box img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all ease-in 0.8s;
+
+}
+#page3-elements .box:hover img{
+opacity: 0;
+}
+#page5{
+height: 100vh;
+width: 100%;
+padding: 4vh 0;
+position: relative;
+
+ 
+}
+#page5 h1{
+font-size: 10vw;
+font-family:rejoy ;
+border-bottom: 1px solid black;
+width: 96%;
+font-weight: 100;
+margin-left: 2%;
+
+}
+#swiperdiv{
+  height: 60vh;
+  width: 100%;
+  position: relative;
+  margin-top: -5%;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+
+#love img {
+  display: block;
+  width: 19%;
+  object-fit: cover;
+ 
+}
+#love {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:2vw;
+ 
+}
+#con{
+white-space: nowrap;
+display: inline-block;
+animation-name: move;
+animation-duration: 5s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+#page6{
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 8vw;
+  
+}
+#movingtext{
+  overflow-x: auto;
+  white-space: nowrap;
+
+
+}
+#movingtext::-webkit-scrollbar{
+display: none;
+}
+
+#movingtext h2{
+  font-size:8vw;
+ display: inline-block;
+ font-family: rejoy;
+
+}
+#gola{
+  height:70px;
+  width:70px;
+  border-radius: 50%;
+  background-color: orangered;
+  display: inline-block;
+  margin: 1vw 2vw;
+}
+@keyframes move{
+  from{
+    transform: translate(0);
+  }
+  to{
+    transform: translate(-100%);
+  }
+}
+#swiperdiv{
+  animation-name:swip;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes swip{
+  from{
+    transform: translate();
+  }
+  to{
+    transform: translate(100%);
+  }
+}
